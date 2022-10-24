@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'open sans', sans-serif;
+  background: url(./sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.user-profile {
+  background-color: rgba(213, 211, 211, 0.631);
+  margin-top: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px;
+  font-size: 25px;
+  word-spacing: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profile-top {
+  text-align: center;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.profile-top img {
+  border-radius: 50%;
+  border: white 4px solid;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.profile-top {
+  background-image: linear-gradient(
+    rgba(128, 0, 128, 0.648),
+    rgba(0, 0, 255, 0.607)
+  );
+  color: white;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+.profile-bottom {
+  padding: 3rem, 3rem, 1rem, 3rem;
+}
+
+.profile-bottom .profile-info {
+  background-color: rgba(255, 255, 255, 0.356);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: grey;
+  height: fit-content;
+}
+.profile-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.profile-info span {
+  margin-left: 4px;
+  color: white;
+  height: 20px;
+}
+
+button {
+  width: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(
+    rgba(128, 0, 128, 0.648),
+    rgba(0, 0, 255, 0.607)
+  );
+  color: white;
+  cursor: pointer;
+}
+
+#gender {
+  text-transform: capitalize;
+}
